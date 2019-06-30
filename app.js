@@ -31,7 +31,8 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
             roundScore += dice;
             document.querySelector('#current-' + activePlayer).textContent = roundScore;
         }else {
-            // reset the current player GLoBAL score
+            // reset the current player GLOBAL score
+            scores = [0, 0];
             document.querySelector('#score-' + activePlayer).textContent = 0;
             // and change player
             nextPlayer();
@@ -67,8 +68,8 @@ function nextPlayer(){
     roundScore = 0;
 
     //* reset the current score when we get 1
-    document.getElementById('current-0').textContent = '0';
-    document.getElementById('current-1').textContent = '0';
+    document.querySelector('#current-0').textContent = '0';
+    document.querySelector('#current-1').textContent = '0';
 
     //* remove the 'active' class and move it to the other player when we get 1
     document.querySelector('.player-0-panel').classList.toggle('active');
@@ -101,12 +102,12 @@ function init() {
     // document.querySelector('class').cssFile.selector = 'property'
 
     //* manipulate an HTML element by its ID
-    document.getElementById('score-0').textContent = '0';
-    document.getElementById('score-1').textContent = '0';
-    document.getElementById('current-0').textContent = '0';
-    document.getElementById('current-1').textContent = '0';
-    document.getElementById('name-0').textContent = 'Player 1';
-    document.getElementById('name-1').textContent = 'Player 2';
+    document.querySelector('#score-0').textContent = '0';
+    document.querySelector('#score-1').textContent = '0';
+    document.querySelector('#current-0').textContent = '0';
+    document.querySelector('#current-1').textContent = '0';
+    document.querySelector('#name-0').textContent = 'Player 1';
+    document.querySelector('#name-1').textContent = 'Player 2';
     document.querySelector('.player-0-panel').classList.remove('winner');
     document.querySelector('.player-1-panel').classList.remove('winner');
     document.querySelector('.player-0-panel').classList.remove('active');
