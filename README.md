@@ -1,9 +1,9 @@
-# pig's dice game
+# Pig's dice game
 
-Roll the dice to add the result to your 'current' score.
+Rolling the dice will add the result to your 'CURRENT' score.
 
-Click 'Hold' to add the score to the total score.
+Click 'HOLD' to add the score to the TOTAL score, you can decide to keep rolling the dice to increase your 'CURRENT' score or press the 'HOLD' button to keep the score and pass the turn.
 
-You can roll as much as you want to accumulate point but if you roll a 1 your current and you total points will set back to 0 and you lose your turn.
+You can roll as much as you want to accumulate points but if you roll a 1 your will lose ALL your points and you loose your turn.
 
-The first who arrive to 100 WIN!
+The first who arrive to 100 points WIN!
