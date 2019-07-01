@@ -32,9 +32,10 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
             document.querySelector('#current-' + activePlayer).textContent = roundScore;
         }else {
             // reset the current player GLOBAL score
-            scores = [0, 0];
-            document.querySelector('#score-' + activePlayer).textContent = 0;
-            // and change player
+            // scores = [0, 0];
+            // document.querySelector('#score-' + activePlayer).textContent = 0;
+
+            //* change player
             nextPlayer();
         }
     }
@@ -88,6 +89,7 @@ function init() {
     activePlayer = 0;
     roundScore = 0;
     gamePlaying = true;
+    sixList = [0, 0]
 
     //* manipulate an HTML element (known as 'setter' because set the value)
     //document.querySelector('#current-' + activePlayer).textContent = dice;
@@ -114,3 +116,4 @@ function init() {
     document.querySelector('.player-1-panel').classList.remove('active');
     document.querySelector('.player-0-panel').classList.add('active');
 };
+
