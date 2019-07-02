@@ -6,24 +6,22 @@ Change the game to follow these rules:
 2. Add an input field to the HTML where players can set the winning score, so that they can change the predefined score of 100. (Hint: you can read that value with the .value property in JavaScript. This is a good oportunity to use google to figure this out :)
 3. Add another dice to the game, so that there are two dices now. The player looses his current score when one of them is a 1. (Hint: you will need CSS to position the second dice, so take a look at the CSS code for the first one.)
 */
-var scores, roundScore, activePlayer, gamePlaying;
+
+var scores, roundScore, activePlayer, gamePlaying, lastDice;
 
 init();
-
-var lastDice;
 
 
 //* when click the Hold Button
 document.querySelector('.btn-roll').addEventListener('click', function() {
-// unonymous function is a function with no name that can only be used inside here
 
     if (gamePlaying) {
-        //* 1. Random number
+        //* 1. Generate a random number for two dice
         var dice1 = Math.floor(Math.random() * 6) + 1;
         var dice2 = Math.floor(Math.random() * 6) + 1;
         console.log('dice1 = ' + dice1 + ' ---- dice2 = ' + dice2);
 
-        //*2. Display the result
+        //*2. Display the result and the dice imgs
         var dice1DOM = document.querySelector('.dice1', '.dice2');
         var dice2DOM = document.querySelector('.dice2')
         dice1DOM.style.display = 'block';
@@ -31,18 +29,17 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         dice1DOM.src = '/dice-' + dice1 +'.png';
         dice2DOM.src = '/dice-' + dice2 +'.png';
 
-        //*3. Update the round score IF the rolled number is NOT a 1
+        //*3. Update the current score IF the rolled number is NOT a 1
         if (dice1 === 1 && dice2 === 1) {
-            //Player looses score
+            //* Player looses total score
             scores[activePlayer] = 0;
             document.querySelector('#score-' + activePlayer).textContent = '0';
             nextPlayer();
         } else if (dice1 !== 1 && dice2 !== 1) {
-            //Add score
+            //* Add the two dice scores to the total
             roundScore += dice1 + dice2;
             document.querySelector('#current-' + activePlayer).textContent = roundScore;
         } else {
-            //Next player
             nextPlayer();
         }
 
@@ -50,10 +47,10 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
     }
 });
 
-//* add the current score to the player's global score
+//* add the current score to the player's total score
 document.querySelector('.btn-hold').addEventListener('click', function(){
     if (gamePlaying) {
-        //* add CURRENT score to GLOBAL score
+        //* add current score to total score
         scores[activePlayer] += roundScore;
 
         //* update the UI
@@ -90,11 +87,11 @@ function nextPlayer(){
     activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
     roundScore = 0;
 
-    //* reset the current score when we get 1
+    //* UPDATE visually the current class in HTML  score when we get 1
     document.querySelector('#current-0').textContent = '0';
     document.querySelector('#current-1').textContent = '0';
 
-    //* remove the 'active' class and move it to the other player when we get 1
+    //* remove the 'active' class and move it to the other player's style when we get 1
     document.querySelector('.player-0-panel').classList.toggle('active');
     document.querySelector('.player-1-panel').classList.toggle('active');
     // document.querySelector('.player-0-panel').classList.remove('active');
@@ -105,6 +102,7 @@ function nextPlayer(){
     // document.querySelector('.dice2').style.display = 'none';
 };
 
+//* Initial state when we hit NEW GAME button
 document.querySelector('.btn-new').addEventListener('click', init); // we are passing the 'init' function and not calling it ('init()')
 
 function init() {
@@ -127,7 +125,7 @@ function init() {
     // document.querySelector('.dice2').style.display = 'none';
     // document.querySelector('class').cssFile.selector = 'property'
 
-    //* manipulate an HTML element by its ID
+    //* Update the HTML elements
     document.querySelector('#score-0').textContent = '0';
     document.querySelector('#score-1').textContent = '0';
     document.querySelector('#current-0').textContent = '0';
