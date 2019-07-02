@@ -141,14 +141,39 @@ i {
 .btn-roll { top: 403px;}
 .btn-hold { top: 467px;}
 
-.dice {
+.dice1 {
     position: absolute;
-    left: 50%;
-    top: 178px;
-    transform: translateX(-50%);
-    height: 100px;
-    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+    left: 43%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-70%);
+    height: 120px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.70);
+    border-radius: 20px;
+}
+
+.dice2 {
+    position: absolute;
+    left: 57%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-70%);
+    height: 120px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.70);
+    border-radius: 20px;
 }
 
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
+
+.input-points {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    right: 50%;
+    transform: translateX(50%);
+    width: 150px;
+    height: 40px;
+    text-transform: uppercase;
+    color: #555
+}
+
+
