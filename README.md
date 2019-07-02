@@ -4,8 +4,8 @@ This is my first JavaScript game that I built following [The Complete JavaScript
 
 In the repository you could find 3 .js files:
 - [app.js](https://github.com/Brewno88/pig-s-dice-game/blob/master/app.js) is the course code.
-- [myChallenges.js]() is my version of the code to solve the challenges.
-- [hisChallenges.js]() is his version.
+- [myChallenges.js](https://github.com/Brewno88/pig-s-dice-game/blob/master/myChallenges.js) is my version of the code to solve the challenges.
+- [hisChallenges.js](https://github.com/Brewno88/pig-s-dice-game/blob/master/hischallenges.js) is his version.
 
 ## Languages used
 
