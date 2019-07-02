@@ -20,4 +20,8 @@ You can roll as much as you want to accumulate points **BUT**:
 - if you roll a single 1 you loose your **current** points (not your **total**) and your turn will end!
 - if you roll a double 1 you will loose **all** your point (**current** and **total**) and your turn will end!
 
+<<<<<<< HEAD
 ### Have Fun! :)
+=======
+### Have Fun! :)
+>>>>>>> b5fa3d8b293c17ea9cef20b7672d44dc8ace41c2
