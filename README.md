@@ -1,15 +1,23 @@
 # Pig's dice game
 
-This is my first JS game that I made following [The Complete JavaScript Course 2019: Build Real Project!] (https://www.udemy.com/the-complete-javascript-course/) course on Udemy.
+This is my first JavaScript game that I built following [The Complete JavaScript Course 2019: Build Real Project!](https://www.udemy.com/the-complete-javascript-course/) course on Udemy.
 
+## Languages used
 
+- HTML
+- CSS
+- Vanilla Javascript
 
-Rolling the dices will add the result to your 'CURRENT' score.
+## How to play
 
-Clicking the 'HOLD' button will add the score to the TOTAL score and you will pass the turn.
+Start by rolling the two dice pressing **roll**, the sum of the two will be added to your **current** score.
 
+You can decide to keep rolling or hold your score, doing so your __current__ score will be added to your __total__ and your turn will end.
 
+Win who hits 100 points as a __total__!.
 
-You can roll as much as you want to accumulate points but if you roll a 1 you will loose ALL your points and you loose your turn.
+You can roll as much as you want to accumulate points **BUT**:
+- if you roll a single 1 you loose your **current** points (not your **total**) and your turn will end!
+- if you roll a double 1 you will loose **all** your point (**current** and **total**) and your turn will end!
 
-The first to arrive to 100 points WINS!
+### Have Fun! :)
