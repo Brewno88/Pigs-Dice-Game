@@ -89,7 +89,6 @@ function init() {
     activePlayer = 0;
     roundScore = 0;
     gamePlaying = true;
-    sixList = [0, 0]
 
     //* manipulate an HTML element (known as 'setter' because set the value)
     //document.querySelector('#current-' + activePlayer).textContent = dice;
