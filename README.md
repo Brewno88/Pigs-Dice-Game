@@ -19,7 +19,7 @@ Start by rolling the two dice pressing **roll**, the sum of the two will be adde
 
 You can decide to keep rolling or hold your score, doing so your __current__ score will be added to your __total__ and your turn will end.
 
-Win who hits 100 points as a __total__!.
+Win who hits 100 points as a __total__ or, you can enter your custom score limit in the **points** field!.
 
 You can roll as much as you want to accumulate points **BUT**:
 - if you roll a single 1 you loose your **current** points (not your **total**) and your turn will end!
