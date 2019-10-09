@@ -22,8 +22,8 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         console.log('dice1 = ' + dice1 + ' ---- dice2 = ' + dice2);
 
         //*2. Display the result and the dice imgs
-        var dice1DOM = document.querySelector('.dice1', '.dice2');
-        var dice2DOM = document.querySelector('.dice2')
+        var dice1DOM = document.querySelector('.dice1');
+        var dice2DOM = document.querySelector('.dice2');
         dice1DOM.style.display = 'block';
         dice2DOM.style.display = 'block';
         dice1DOM.src = '/dice-' + dice1 +'.png';
