@@ -26,8 +26,8 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         var dice2DOM = document.querySelector('.dice2');
         dice1DOM.style.display = 'block';
         dice2DOM.style.display = 'block';
-        dice1DOM.src = '/dice-' + dice1 +'.png';
-        dice2DOM.src = '/dice-' + dice2 +'.png';
+        dice1DOM.src = 'dice-' + dice1 +'.png';
+        dice2DOM.src = 'dice-' + dice2 +'.png';
 
         //*3. Update the current score IF the rolled number is NOT a 1
         if (dice1 === 1 && dice2 === 1) {
