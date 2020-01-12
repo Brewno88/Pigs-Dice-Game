@@ -1,12 +1,6 @@
 # Pig's dice game
 
-This is my first JavaScript game that I built following [The Complete JavaScript Course 2019: Build Real Project!](https://www.udemy.com/the-complete-javascript-course/) course on Udemy.
-
-In the repository you could find 3 .js files:
-
-- [app.js](https://github.com/Brewno88/pig-s-dice-game/blob/master/app.js) is the course code.
-- [myChallenges.js](https://github.com/Brewno88/pig-s-dice-game/blob/master/myChallenges.js) is my version of the code to solve the challenges.
-- [hisChallenges.js](https://github.com/Brewno88/pig-s-dice-game/blob/master/hisChallenges.js) is his version.
+This is dice game built using JavaScript.
 
 ## Languages used
 
