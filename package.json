@@ -1,0 +1,24 @@
+{
+  "name": "pigs-dice-game",
+  "version": "1.0.0",
+  "description": "A fun dice game",
+  "main": "app.js",
+  "homepage": "https://brewno88.github.io/pigs-dice-game",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brewno88/Pigs-Dice-Game.git"
+  },
+  "author": "Brewno88",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brewno88/Pigs-Dice-Game/issues"
+  }
+}
