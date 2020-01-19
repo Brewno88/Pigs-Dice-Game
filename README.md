@@ -1,14 +1,14 @@
-# Pig's dice game
+# Pig's dice game 🐖 🎲 🎲
 
 This is dice game built using JavaScript.
 
-## Languages used
+## Technologies 🤖
 
 - HTML
 - CSS
 - Vanilla Javascript
 
-## How to play
+## How to play 🕹
 
 Start by rolling the two dice pressing **roll**, the sum of the two will be added to your **current** score.
 
@@ -21,4 +21,4 @@ You can roll as much as you want to accumulate points **BUT**:
 - if you roll a single 1 you loose your **current** points (not your **total**) and your turn will end!
 - if you roll a double 1 you will loose **all** your point (**current** and **total**) and your turn will end!
 
-### Have Fun! :)
+### Have Fun! 💃🎊🕺
