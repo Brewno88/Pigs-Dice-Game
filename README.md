@@ -1,5 +1,7 @@
 # Pig's dice game 🐖 🎲 🎲
 
+[Live Demo](https://brewno88.github.io/pigs-dice-game/)
+
 This is dice game built using JavaScript.
 
 ## Technologies 🤖
